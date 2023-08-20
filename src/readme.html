@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>Reporting Account Affiliations Plugin Readme</title>
+    <style type="text/css">
+        BODY {
+            font-size : 100%;
+        }
+        BODY {
+            font-family : tahoma, verdana, arial, helvetica, sans-serif;
+            font-size : 0.8em;
+        }
+        H2 {
+             font-size : 10pt;
+             font-weight : bold;
+        }
+        A:hover {
+            text-decoration : none;
+        }
+        H1 {
+            font-family : tahoma, arial, helvetica, sans-serif;
+            font-size : 1.4em;
+            font-weight: bold;
+            border-bottom : 1px #ccc solid;
+            padding-bottom : 2px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    Reporting Account Affiliations Plugin Readme
+</h1>
+
+<h2>Overview</h2>
+
+<p>
+    The Reporting Account Affiliations plugin provides a way for Openfire to report to other entities the relationship it has with a user
+    on its domain, as specified in
+    <a href="https://xmpp.org/extensions/inbox/xep-reporting-account-affiliations.html">XEP-xxxx: Reporting Account Affiliations</a>.
+</p>
+<p>
+    Note: at the time of writing, the protocol as implemented by this plugin has not yet been accepted for consideration or approved
+    in any official manner by the XMPP Standards Foundation, and this document is not yet an XMPP Extension Protocol (XEP). This plugin should
+    be considered experimental.
+</p>
+
+<h2>Installation</h2>
+
+<p>
+    Copy accountaff.jar into the plugins directory of your Openfire installation. The plugin will then be
+    automatically deployed. To upgrade to a new version, copy the new accountaff.jar file over the existing
+    file.
+</p>
+
+<h2>Using the 'member' affiliation</h2>
+
+<p>
+    The Reporting Account Affiliations specification defines four 'affiliation' types:
+</p>
+
+<dl>
+    <dt>anonymous</dt><dd>the address belongs to an anonymous, temporary or guest account. The user is not known to the server.</dd>
+    <dt>registered</dt><dd>the address belongs to an account that self-registered, e.g. using XEP-0077</dd>
+    <dt>member</dt><dd>the address belongs to a trusted member of the server - e.g. accounts that are provisioned for known users.</dd>
+    <dt>admin</dt><dd>the address belongs to a server administrator</dd>
+</dl>
+
+<p>
+    This plugin is able to automatically determine the correct affiliation value for a user, but will (without manual configuration)
+    never resolve the 'member' affiliation: Openfire does not keep track of how an account was registered.
+</p>
+
+<p>
+    To make this plugin report an account as having the `member` affiliation, you can configure the corresponding user to
+    have a User Property with the name <code>RAA Affiliation</code> that has the value <code>member</code>
+</p>
+
+<p>
+    User properties can be edited on the Admin Console when the
+    <a href="https://www.igniterealtime.org/projects/openfire/plugin-archive.jsp?plugin=rawpropertyeditor">RawPropertyEditor plugin</a>
+    has been installed.
+</p>
+
+<h2>Attribution</h2>
+<p>
+    <a href="https://www.flaticon.com/free-icons/affiliate-marketing" title="affiliate marketing icons">Affiliate marketing icons created by Debruder Studio - Flaticon</a>
+</p>
+
+</body>
+</html>
