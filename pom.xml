@@ -12,7 +12,7 @@
 
     <groupId>org.igniterealtime.openfire.plugins</groupId>
     <artifactId>accountaff</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>Reporting Account Affiliations</name>
     <description>A plugin that a way for Openfire to report to other entities the relationship it has with a user on its domain.</description>
