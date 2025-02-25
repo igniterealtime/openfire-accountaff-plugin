@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Ignite Realtime Foundation. All rights reserved.
+ * Copyright (C) 2023-2025 Ignite Realtime Foundation. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package org.jivesoftware.openfire.plugin.accountaff;
  * Definition of all account affiliations, as specified by the XEP.
  *
  * @author Guus der Kinderen, guus@goodbytes.nl
- * @see <a href="https://xmpp.org/extensions/inbox/xep-reporting-account-affiliations.html">XEP-xxx: Reporting Account Affiliations</a>
+ * @see <a href="https://xmpp.org/extensions/xep-0489.html">XEP-0489: Reporting Account Affiliations</a>
  */
 public enum Affiliation
 {

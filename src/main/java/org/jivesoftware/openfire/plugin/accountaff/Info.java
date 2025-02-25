@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Ignite Realtime Foundation. All rights reserved.
+ * Copyright (C) 2023-2025 Ignite Realtime Foundation. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,9 +28,10 @@ import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 /**
- * Representation of account information, as defined in XEP-xxx: Reporting Account Affiliations.
+ * Representation of account information, as defined in XEP-0489: Reporting Account Affiliations.
  *
  * @author Guus der Kinderen, guus@goodbytes.nl
+ * @see <a href="https://xmpp.org/extensions/xep-0489.html">XEP-0489: Reporting Account Affiliations</a>
  */
 public class Info
 {
