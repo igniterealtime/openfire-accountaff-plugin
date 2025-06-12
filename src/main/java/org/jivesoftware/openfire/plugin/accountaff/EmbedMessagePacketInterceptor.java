@@ -20,7 +20,7 @@ public class EmbedMessagePacketInterceptor implements PacketInterceptor
 {
     private static final Logger Log = LoggerFactory.getLogger(EmbedMessagePacketInterceptor.class);
 
-    public static final String NAMESPACE = "urn:xmpp:raa:0#embed-message\n";
+    public static final String NAMESPACE = "urn:xmpp:raa:0#embed-message";
 
     @Override
     public void interceptPacket(Packet packet, Session session, boolean incoming, boolean processed) throws PacketRejectedException
