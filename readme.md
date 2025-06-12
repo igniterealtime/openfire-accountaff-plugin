@@ -1,7 +1,7 @@
 # Openfire Reporting Account Affiliations Plugin
 
 This is a plugin for the Openfire Real-time Communications server.     The Reporting Account Affiliations plugin provides a way for Openfire to report to other entities the relationship it has with a user
-on its domain, as specified in [XEP-xxxx: Reporting Account Affiliations](https://xmpp.org/extensions/inbox/xep-reporting-account-affiliations.html).
+on its domain, as specified in [XEP-0489: Reporting Account Affiliations](https://xmpp.org/extensions/xep-0489.html).
 
 Note: at the time of writing, the protocol as implemented by this plugin has not yet been accepted for consideration or approved 
 in any official manner by the XMPP Standards Foundation, and this document is not yet an XMPP Extension Protocol (XEP). This plugin should
